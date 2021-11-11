@@ -34,6 +34,8 @@
 - + verificado
 - + [tipo](#profileType)
 - + [plano](#payment)
+- + [utilizadoresASeguir](#profile)
+- + [utilizadoresSeguindo](#profile)
 
 ***
 
@@ -43,10 +45,6 @@
 - + Utilizador
 - + Editora
 
-***
-
-- Amigo
-- + ligação entre dois Perfis
 
 ***
 <!-- Enumeracao dos tipos de plano de pagamento -->
