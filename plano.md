@@ -33,6 +33,7 @@
 
 - <a name="profile"></a>Profile
 - + verificado
+- + nome
 - + [tipo](#profileType)
 - + [plano](#payment)
 - + [utilizadoresASeguir](#profile)
