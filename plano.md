@@ -17,6 +17,7 @@
 ***
 
 - <a name="album"></a>Álbum
+- + nome
 - + númeroMúsicas
 - + [músicas](#songs)
 - + [artistas](#profile)
