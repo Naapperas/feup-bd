@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-14T17:29:36.716Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="W7wc-q0977HoR34K4SLx" version="15.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-14T17:30:39.362Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="CFMXSN6iqMmAZ_ljLe5w" version="15.7.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1796" dy="962" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="513" dy="275" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -592,14 +592,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="M-XK-t2GSOMbPkWvGWRD-198" value="parent" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="M-XK-t2GSOMbPkWvGWRD-197">
-          <mxGeometry x="-1" relative="1" as="geometry" />
+        <mxCell id="M-XK-t2GSOMbPkWvGWRD-198" value="*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;rotation=0;" connectable="0" vertex="1" parent="M-XK-t2GSOMbPkWvGWRD-197">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="-10" y="22" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="M-XK-t2GSOMbPkWvGWRD-199" value="1..*" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="M-XK-t2GSOMbPkWvGWRD-197">
           <mxGeometry x="1" relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="M-XK-t2GSOMbPkWvGWRD-200" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="350" y="188" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="M-XK-t2GSOMbPkWvGWRD-201" value="participating&lt;br style=&quot;font-size: 8px;&quot;&gt;Artists" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=90;fontSize=8;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="327" y="307" width="60" height="20" as="geometry" />
