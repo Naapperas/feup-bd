@@ -43,7 +43,6 @@
 - <a name="profileType"></a>TipoPerfil
 - + Artista
 - + Utilizador
-- + Editora
 
 
 ***
