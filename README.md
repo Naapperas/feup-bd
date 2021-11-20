@@ -4,5 +4,5 @@ Project made for the DATABASES class of the Bachelor in Informatics and Computin
 
 Contributors: 
 > Nuno Pereira<br>
-> Gonçalo Marques
+> Gonçalo Marques<br>
 > José Albano
