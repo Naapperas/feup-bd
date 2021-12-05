@@ -106,9 +106,10 @@ CREATE TABLE LikedPodcasts (
 
 DROP TABLE IF EXISTS LikedPodcastEpisode;
 CREATE TABLE LikedPodcastEpisode (
-    podcastId INTEGER REFERENCES PodcastEpisode(podcastId),
-    episodeNumber INTEGER REFERENCES PodcastEpisode(episodeNumber),
+    podcastId INTEGER,
+    episodeNumber INTEGER,
     userId INTEGER REFERENCES User(id),
+    CONSTRAINT LIKED_EPISODE_FK FOREIGN KEY (podcastId, episodeNumber) REFERENCES PodcastEpisode(podcastId, episodeNumber),
     CONSTRAINT LIKED_EPISODE_ID PRIMARY KEY (podcastId, episodeNumber, userId)
 );
 
