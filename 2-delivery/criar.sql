@@ -87,7 +87,7 @@ CREATE TABLE PodcastEpisode (
     podcastId INTEGER REFERENCES Podcast(id),
     episodeNumber INTEGER CHECK (episodeNumber >= 1),
     title TEXT NOT NULL,
-    durations TIME NOT NULL,
+    duration TIME NOT NULL,
     episodeDescription TEXT,
     releaseDate DATE NOT NULL,
     CONSTRAINT EPISODE_ID PRIMARY KEY(podcastId, episodeNumber)
@@ -106,9 +106,10 @@ CREATE TABLE LikedPodcasts (
 
 DROP TABLE IF EXISTS LikedPodcastEpisode;
 CREATE TABLE LikedPodcastEpisode (
-    episodeId INTEGER REFERENCES PodcastEpisode(id),
+    podcastId INTEGER REFERENCES PodcastEpisode(podcastId),
+    episodeNumber INTEGER REFERENCES PodcastEpisode(episodeNumber),
     userId INTEGER REFERENCES User(id),
-    CONSTRAINT LIKED_EPISODE_ID PRIMARY KEY (episodeId, userId)
+    CONSTRAINT LIKED_EPISODE_ID PRIMARY KEY (podcastId, episodeNumber, userId)
 );
 
 --------------------------------------
