@@ -1,2 +1,3 @@
 *.backup
 .~lock.*.odt#
+__pycache__/
