@@ -164,16 +164,13 @@ INSERT INTO Song VALUES (3, "drivers license", "00:04:02", TRUE, "Pop", 11908094
 INSERT INTO Song VALUES (4, "deja vu", "00:03:35", TRUE, "Pop", 654698423, "2021", 1, 4);
 INSERT INTO Song VALUES (5, "favorite crime", "00:02:32", TRUE, "Pop", 137196234, "2021", 1, 5);
 
-
 INSERT INTO Album VALUES (2, "Simulation Theory", 3, "00:11:48", "2018", 12);
 INSERT INTO Song VALUES (6,"algorithm", "00:04:05", FALSE, "Rock", 20689183, "2018", 2, 1);
 INSERT INTO Song VALUES (7,"pressure", "00:03:55", FALSE, "Rock", 78816074, "2018", 2, 2);
 INSERT INTO Song VALUES (8,"dig down", "00:03:48", FALSE, "Rock", 53881508, "2018", 2, 3);
 
-
 INSERT INTO Album VALUES (3, "A Cabritinha", 1, "00:03:48", "2004", 15);
 INSERT INTO Song VALUES (9, "A Cabritinha","00:03:48",FALSE, "Pop", 2852020, "2004", 3, 1);
-
 
 INSERT INTO Album VALUES (4, "The Great War", 4, "00:14:38", "2019", 11);
 INSERT INTO Song VALUES (10, "The Red Baron", "00:03:22", FALSE, "Metal", 39753992, "2019", 4,1);
@@ -181,22 +178,18 @@ INSERT INTO Song VALUES (11, "Fields of Verdun", "00:03:17", FALSE, "Metal", 359
 INSERT INTO Song VALUES (12, "Great War", "00:04:28", FALSE, "Metal", 30153073, "2019", 4,3);
 INSERT INTO Song VALUES (13, "82nd All the Way", "00:03:31", FALSE, "Metal", 22271563, "2019", 4,4);
 
-
 INSERT INTO Album VALUES (5, "Broken Glass", 1, "00:03:37", "2020", 14);
 INSERT INTO Song VALUES (14, "Broken Glass", "00:03:37", FALSE, "Indie", 4783, "2020", 5, 1);
-
 
 INSERT INTO Album VALUES (6, "Endgame", 3, "00:11:16", "2011", 19);
 INSERT INTO Song VALUES (15, "Make It Stop", "00:03:54", FALSE, "Rock",54911809, "2011", 6, 1);
 INSERT INTO Song VALUES (16, "Satellite", "00:03:58", FALSE, "Rock",147642252, "2011", 6, 2);
 INSERT INTO Song VALUES (17, "Endgame", "00:03:24", FALSE, "Rock",10105051, "2011", 6, 3);
 
-
 INSERT INTO Album VALUES (7, "A Night At The Opera", 3, "00:13:01", "1975", 13);
 INSERT INTO Song VALUES (18, "Bohemian Rhapsody", "00:05:54", FALSE, "Rock",1664659500, "1975", 7, 1);
 INSERT INTO Song VALUES (19, "Love of my Life", "00:03:37", FALSE, "Rock",293321939, "1975", 7, 2);
 INSERT INTO Song VALUES (20, "'39", "00:03:30", FALSE, "Rock",48172668, "1975", 7, 3);
-
 
 INSERT INTO Album VALUES (8, "Smells Like Teen Spirit", 1, "00:05:01", "1991", 17);
 INSERT INTO Song VALUES (21, "Smells Like Teen Spirit", "00:05:01", FALSE, "Rock", 1141145309, "1991", 8, 1);
@@ -210,6 +203,7 @@ INSERT INTO Song VALUES (24, "Circo de Feras", "00:03:53", FALSE, "Rock", 119880
 INSERT INTO Song VALUES (25, "Não Sou O Único", "00:03:38", FALSE, "Rock", 1941543, "1987", 10, 3);
 INSERT INTO Song VALUES (26, "Vida Malvada", "00:04:47", FALSE, "Rock", 375219, "1987", 10, 4);
 
+--------------------------------
 
 INSERT INTO Playlist VALUES (1, "Bangers", FALSE, 8,"00:33:50", 1);
 INSERT INTO SongPositionInPlaylist VALUES (18, 1, 1);
@@ -221,10 +215,10 @@ INSERT INTO SongPositionInPlaylist VALUES (9, 1, 6);
 INSERT INTO SongPositionInPlaylist VALUES (22, 1, 7);
 INSERT INTO SongPositionInPlaylist VALUES (21, 1, 8);
 
-
 INSERT INTO Playlist VALUES (2, "Smol Chungus", TRUE, 1, "00:05:01", 2);
 INSERT INTO SongPositionInPlaylist VALUES (21, 2, 1);
 
+--------------------------------
 
 INSERT INTO LikedAlbum VALUES (1, 2);
 INSERT INTO LikedAlbum VALUES (4, 2);
@@ -232,6 +226,7 @@ INSERT INTO LikedAlbum VALUES (4, 1);
 INSERT INTO LikedAlbum VALUES (8, 1);
 INSERT INTO LikedAlbum VALUES (1, 20);
 
+--------------------------------
 
 INSERT INTO LikedSong VALUES (10, 1);
 INSERT INTO LikedSong VALUES (10, 2);
@@ -239,6 +234,7 @@ INSERT INTO LikedSong VALUES (4, 4);
 INSERT INTO LikedSong VALUES (6, 3);
 INSERT INTO LikedSong VALUES (18, 6);
 
+--------------------------------
 
 INSERT INTO LikedPlaylist VALUES (1, 1);
 INSERT INTO LikedPlaylist VALUES (1, 2);
@@ -254,10 +250,13 @@ INSERT INTO LikedPlaylist VALUES (1, 10);
 INSERT INTO LikedPlaylist VALUES (2, 1);
 INSERT INTO LikedPlaylist VALUES (2, 2);
 
+--------------------------------
 
 INSERT INTO Collaborator VALUES (1, 2);
 INSERT INTO Collaborator VALUES (2, 1);
 INSERT INTO Collaborator VALUES (1,3);
+
+--------------------------------
 
 INSERT INTO FeaturedArtists VALUES (10, 15);
 INSERT INTO FeaturedArtists VALUES (21, 18);
