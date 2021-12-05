@@ -157,4 +157,10 @@ INSERT INTO LikedPodcastEpisode VALUES (2, 1, 3);
 
 --------------------------------
 
+INSERT INTO Album VALUES (1, "Sour", 5, "00:16:56", "2021", 20);
+INSERT INTO Song VALUES (1, "good 4 u", "00:02:58", TRUE, "Pop", 1098075334, "2021", 1, 1);
+INSERT INTO Song VALUES (2, "traitor", "00:03:49", TRUE, "Pop", 520740950, "2021", 1, 2);
+INSERT INTO Song VALUES (3, "drivers license", "00:04:02", TRUE, "Pop", 1190809499, "2021", 1, 3);
+INSERT INTO Song VALUES (4, "deja vu", "00:03:35", TRUE, "Pop", 654698423, "2021", 1, 4);
+INSERT INTO Song VALUES (5, "favorite crime", "00:02:32", TRUE, "Pop", 137196234, "2021", 1, 5);
 
