@@ -272,14 +272,44 @@ INSERT INTO Song VALUES (76, "Long Road To Ruin", "00:03:44", FALSE, "Rock", 486
 INSERT INTO Song VALUES (77, "Come Alive", "00:05:10", FALSE, "Rock", 20626072, 9, 5);
 INSERT INTO Song VALUES (78, "Stranger Things Have Happened", "00:05:21", FALSE, "Rock", 30341165, 9, 6);
 INSERT INTO Song VALUES (79, "Cheer Up, Boys (Your Make Up Is Running)", "00:03:41", FALSE, "Rock", 8635089, 9, 7);
-INSERT INTO Song VALUES (80, "Summer's End", "00:04:37", FALSE, "Rock", 9062072)
+INSERT INTO Song VALUES (80, "Summer's End", "00:04:37", FALSE, "Rock", 9062072, 9, 8);
+INSERT INTO Song VALUES (81, "Ballad Of The Beaconsfield Miners", "00:02:32", FALSE, "Rock", 6735760, 9, 9);
+INSERT INTO Song VALUES (82, "Statues", "00:03:47", FALSE, "Rock", 7324793, 9, 10);
+INSERT INTO Song VALUES (83, "But, Honestly", "00:04:35", FALSE, "Rock", 10297750, 9, 11);
+INSERT INTO Song VALUES (84, "Home", "00:04:53", FALSE, "Rock", 22786095, 9, 12);
 
 
-INSERT INTO Album VALUES (10, "Circo de Feras", 4, "00:16:09", "1987", 16);
-INSERT INTO Song VALUES (23, "Contentores", "00:03:51", FALSE, "Rock", 3515421, 10, 1);
-INSERT INTO Song VALUES (24, "Circo de Feras", "00:03:53", FALSE, "Rock", 1198802, 10, 2);
-INSERT INTO Song VALUES (25, "Não Sou O Único", "00:03:38", FALSE, "Rock", 1941543, 10, 3);
-INSERT INTO Song VALUES (26, "Vida Malvada", "00:04:47", FALSE, "Rock", 375219, 10, 4);
+INSERT INTO Album VALUES (10, "Circo de Feras", 9, "00:34:01", "1987", 16);
+INSERT INTO Song VALUES (85, "Contentores", "00:03:51", FALSE, "Rock", 3515421, 10, 1);
+INSERT INTO Song VALUES (86, "Sai Prá Rua", "00:03:04", FALSE, "Rock", 63235, 10, 2);
+INSERT INTO Song VALUES (87, "Pensão", "00:03:59", FALSE, "Rock", 31146, 10, 3);
+INSERT INTO Song VALUES (88, "Desemprego", "00:03:41", FALSE, "Rock", 25998, 10, 4);
+INSERT INTO Song VALUES (89, "Esta Cidade", "00:02:20", FALSE, "Rock", 63878, 10, 5);
+INSERT INTO Song VALUES (90, "Não Sou O Único", "00:03:38", FALSE, "Rock", 1941543, 10, 6);
+INSERT INTO Song VALUES (91, "N' América", "00:04:42", FALSE, "Rock" 144557, 10, 7);
+INSERT INTO Song VALUES (92, "Vida Malvada", "00:04:47", FALSE, "Rock", 375219, 10, 8);
+INSERT INTO Song VALUES (93, "Circo de Feras", "00:03:53", FALSE, "Rock", 1198802, 10, 9);
+
+
+INSERT INTO Album VALUES (11, "Coração Não Tem Idade (Vou Beijar)[feat. Toy]", 1, "00:04:23", "2019", 22);
+INSERT INTO Song VALUES (94, "Coração Não Tem Idade (Vou Beijar)[feat. Toy]", "00:04:23", FALSE, "Metal", 845341, 11, 1);
+
+
+INSERT INTO Album VALUES (12, "Coração Não Tem Idade (Vou Beijar)", 1, "00:04:28", "2017", 21);
+INSERT INTO Song VALUES (95, "Coração Não Tem Idade (Vou Beijar)", "00:04:28", FALSE, "Pop", 3922516, 12, 1);
+
+INSERT INTO Album VALUES (13, "In The Court Of The Dragon", 10, "00:52:16", "2021", 22);
+INSERT INTO Song VALUES (96, "X", "00:01:27", FALSE, "Metal", 680967, 13, 1);
+INSERT INTO Song VALUES (97, "In The Court Of The Dragon", "00:05:09", FALSE, "Metal", 4479160, 13, 2);
+INSERT INTO Song VALUES (98, "Like A Sword Over Damocles", "00:05:30", FALSE, "Metal", 1370092, 13, 3);
+INSERT INTO Song VALUES (99, "Feast Of Fire", "00:04:18", FALSE, "Metal", 5423217, 13, 4);
+INSERT INTO Song VALUES (100, "A Crisis Of Revelation", "00:05:35", FALSE, "Metal", 1099362, 13, 5);
+INSERT INTO Song VALUES (101, "The Shadow Of The Abattoir", "00:07:11", FALSE, "Metal", 1110641, 13, 6);
+INSERT INTO Song VALUES (102, "No Way Back Just Through", "00:03:53", FALSE, "Metal", 1816676, 13, 7);
+INSERT INTO Song VALUES (103, "Fall Into Your Hands", "00:07:45", FALSE, "Metal", 841274, 13, 8);
+INSERT INTO Song VALUES (104, "From Dawn To Decadence", "00:04:08", FALSE, "Metal", 703400, 13, 9);
+INSERT INTO Song VALUES (105, "The Phalanx", "00:07:15", FALSE, "Metal", 1542828, 13, 10);
+
 
 --------------------------------
 
