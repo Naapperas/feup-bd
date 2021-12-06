@@ -1,4 +1,27 @@
 DROP TABLE IF EXISTS User;
+DROP TABLE IF EXISTS Artist;
+DROP TABLE IF EXISTS RankingByMonthlyListeners;
+DROP TABLE IF EXISTS Consumer;
+DROP TABLE IF EXISTS Concert;
+DROP TABLE IF EXISTS GuestArtist;
+DROP TABLE IF EXISTS Podcast;
+DROP TABLE IF EXISTS PodcastGenre;
+DROP TABLE IF EXISTS TypesOfPodcast;
+DROP TABLE IF EXISTS PodcastEpisode;
+DROP TABLE IF EXISTS LikedPodcasts;
+DROP TABLE IF EXISTS LikedPodcastEpisode;
+DROP TABLE IF EXISTS Album;
+DROP TABLE IF EXISTS Song;
+DROP TABLE IF EXISTS Playlist;
+DROP TABLE IF EXISTS SongPositionInPlaylist;
+DROP TABLE IF EXISTS LikedAlbum;
+DROP TABLE IF EXISTS LikedSong;
+DROP TABLE IF EXISTS LikedPlaylist;
+DROP TABLE IF EXISTS Collaborator;
+DROP TABLE IF EXISTS FeaturedArtists;
+
+--------------------------------------
+
 CREATE TABLE User (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     userName TEXT NOT NULL,
@@ -9,7 +32,6 @@ CREATE TABLE User (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS RankingByMonthlyListeners;
 CREATE TABLE RankingByMonthlyListeners (
     monthlyListeners INTEGER PRIMARY KEY CHECK (monthlyListeners >= 0),
     ranking INTEGER NOT NULL CHECK (ranking >= 1)
@@ -17,7 +39,6 @@ CREATE TABLE RankingByMonthlyListeners (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS Artist;
 CREATE TABLE Artist (
     id INTEGER REFERENCES User(id),
     about TEXT,
@@ -27,7 +48,6 @@ CREATE TABLE Artist (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS Consumer;
 CREATE TABLE Consumer (
     id INTEGER REFERENCES User(id),
     paymentPlan TEXT CHECK (paymentPlan IN ("Premium","Free","Duo","Family","Student")) NOT NULL,
@@ -36,7 +56,6 @@ CREATE TABLE Consumer (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS Concert;
 CREATE TABLE Concert (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     concertDate DATE NOT NULL,
@@ -47,7 +66,6 @@ CREATE TABLE Concert (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS GuestArtist;
 CREATE TABLE GuestArtist (
     concertID INTEGER REFERENCES Concert(id), 
     artistID INTEGER REFERENCES Artist(id), 
@@ -56,7 +74,6 @@ CREATE TABLE GuestArtist (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS Podcast;
 CREATE TABLE Podcast(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     podcastName TEXT NOT NULL,
@@ -65,7 +82,6 @@ CREATE TABLE Podcast(
 
 --------------------------------------
 
-DROP TABLE IF EXISTS PodcastGenre;
 CREATE TABLE PodcastGenre (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     genre TEXT NOT NULL UNIQUE CHECK (genre IN ("History","Crime","News and Politics","Comedy","Sport and Leisure","Society and Culture","Educational","Lifestyle","Business and Tech","Arts","Music","Games","Family Friendly"))
@@ -73,7 +89,6 @@ CREATE TABLE PodcastGenre (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS TypesOfPodcast;
 CREATE TABLE TypesOfPodcast(
     podcastId INTEGER REFERENCES Podcast(id), 
     genreId INTEGER REFERENCES PodcastGenre(id),
@@ -82,7 +97,6 @@ CREATE TABLE TypesOfPodcast(
 
 --------------------------------------
 
-DROP TABLE IF EXISTS PodcastEpisode;
 CREATE TABLE PodcastEpisode (
     podcastId INTEGER REFERENCES Podcast(id),
     episodeNumber INTEGER CHECK (episodeNumber >= 1),
@@ -95,7 +109,6 @@ CREATE TABLE PodcastEpisode (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS LikedPodcasts;
 CREATE TABLE LikedPodcasts (
     podcastId INTEGER REFERENCES Podcast(id),
     userId INTEGER REFERENCES User(id),
@@ -104,7 +117,6 @@ CREATE TABLE LikedPodcasts (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS LikedPodcastEpisode;
 CREATE TABLE LikedPodcastEpisode (
     podcastId INTEGER,
     episodeNumber INTEGER,
@@ -115,23 +127,21 @@ CREATE TABLE LikedPodcastEpisode (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS Album;
 CREATE TABLE Album (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     albumName TEXT NOT NULL,
-    numberOfSongs INTEGER NOT NULL CHECK (numberOfSongs >= 1),
-    durations TIME NOT NULL CHECK (durations >= 0),
+    numberOfSongs INTEGER NOT NULL CHECK (numberOfSongs >= 1) DEFAULT 1,
+    duration TIME NOT NULL CHECK (durations >= 0) DEFAULT 0,
     releaseYear DATE NOT NULL,
     mainArtist INTEGER REFERENCES Artist(id)
 );
 
 --------------------------------------
 
-DROP TABLE IF EXISTS Song;
 CREATE TABLE Song (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     songName TEXT NOT NULL,
-    duration TIME NOT NULL,
+    duration TIME NOT NULL CHECK (duration >= 0),
     isExplicit BOOLEAN DEFAULT FALSE,
     genre TEXT NOT NULL CHECK (genre IN ("Rock", "Pop", "HipHop", "Rap", "Metal", "Jazz", "Lo-fi", "Blues", "Reggae", "Indie", "Clássica")),
     numberOfStreams INTEGER NOT NULL CHECK (numberOfStreams >= 0),
@@ -142,19 +152,17 @@ CREATE TABLE Song (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS Playlist;
 CREATE TABLE Playlist (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     playlistName TEXT NOT NULL,
     isPrivate BOOLEAN DEFAULT FALSE,
-    numberOfSongs INTEGER NOT NULL,
-    duration TIME NOT NULL,
+    numberOfSongs INTEGER NOT NULL CHECK (numberOfSongs >= 0) DEFAULT 0,
+    duration TIME NOT NULL CHECK (durations >= 0) DEFAULT 0,
     creator INTEGER REFERENCES User(id)
 );
 
 --------------------------------------
 
-DROP TABLE IF EXISTS SongPositionInPlaylist;
 CREATE TABLE SongPositionInPlaylist (
     songId INTEGER REFERENCES Song(id),
     playlisId INTEGER REFERENCES Playlist(id),
@@ -164,7 +172,6 @@ CREATE TABLE SongPositionInPlaylist (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS LikedAlbum;
 CREATE TABLE LikedAlbum (
     albumId INTEGER REFERENCES Album(id),
     userId INTEGER REFERENCES User(id),
@@ -173,7 +180,6 @@ CREATE TABLE LikedAlbum (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS LikedSong;
 CREATE TABLE LikedSong (
     songId INTEGER REFERENCES Song(id),
     userId INTEGER REFERENCES User(id),
@@ -182,7 +188,6 @@ CREATE TABLE LikedSong (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS LikedPlaylist;
 CREATE TABLE LikedPlaylist (
     playlistId INTEGER REFERENCES Playlist(id),
     userId INTEGER REFERENCES User(id),
@@ -191,7 +196,6 @@ CREATE TABLE LikedPlaylist (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS Collaborator;
 CREATE TABLE Collaborator (
     playlistId INTEGER REFERENCES Playlist(id),
     userId INTEGER REFERENCES User(id),
@@ -200,7 +204,6 @@ CREATE TABLE Collaborator (
 
 --------------------------------------
 
-DROP TABLE IF EXISTS featuredArtists;
 CREATE TABLE FeaturedArtists (
     songId INTEGER REFERENCES Song(id),
     artistId INTEGER REFERENCES Artist(id),
