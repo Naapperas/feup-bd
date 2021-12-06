@@ -45,15 +45,15 @@ INSERT INTO RankingByMonthlyListeners VALUES (39181301, 2);
 INSERT INTO Artist VALUES (13, "British", 39181301);
 
 INSERT INTO User VALUES (14, "Call Me Alice", "cma@edu.fe.up.pt", FALSE, "25-04-2015");
-INSERT INTO RankingByMonthlyListeners VALUES (202, 10);
+INSERT INTO RankingByMonthlyListeners VALUES (202, 12);
 INSERT INTO Artist VALUES (14, NULL, 202);
 
 INSERT INTO User VALUES (15, "Quim Barreiros", "quim@gmail.com", TRUE, "19-06-1947");
-INSERT INTO RankingByMonthlyListeners VALUES (76375, 9);
+INSERT INTO RankingByMonthlyListeners VALUES (76375, 10);
 INSERT INTO Artist VALUES (15, "Pimba", 76375);
 
 INSERT INTO User VALUES (16, "Xutos e Pontapés", "xutos@mail.pt", TRUE, "02-07-1980");
-INSERT INTO RankingByMonthlyListeners VALUES (155207, 8);
+INSERT INTO RankingByMonthlyListeners VALUES (155207, 9);
 INSERT INTO Artist VALUES (16, "Contentores", 155207);
 
 INSERT INTO User VALUES (17, "Nirvana", "kurt.cubano@gmail.com", TRUE, "23-03-1987");
@@ -72,6 +72,13 @@ INSERT INTO User VALUES (20, "Olivia Rodrigo", "xoxo@facebook.pt", TRUE, "20-03-
 INSERT INTO RankingByMonthlyListeners VALUES (44544112, 1);
 INSERT INTO Artist VALUES (20, "'I love her' - random fan", 44544112);
 
+INSERT INTO User VALUES (21, "Toy", "voucantarvoudançar@gmail.com", TRUE, "10-02-1963");
+INSERT INTO RankingByMonthlyListeners VALUES (65914, 11);
+INSERT INTO Artist VALUES (21, "Vou mh mh até me cançar", 65914);
+
+INSERT INTO User VALUES (22, "Trivium", "Trivum@hotmail.com", TRUE, "04-10-1999");
+INSERT INTO RankingByMonthlyListeners VALUES (1856614, 8)
+
 --------------------------------
 
 INSERT INTO Concert VALUES (1, "01-01-1990", "15:37:00", "America", 19);
@@ -87,6 +94,9 @@ INSERT INTO Concert VALUES (4, "20-02-2022", "15:00:00", "Minha Casa", 20);
 INSERT INTO GuestArtist VALUES (4, 11);
 
 INSERT INTO Concert VALUES (5, "25-12-2012", "22:00:00", "Wembley", 12);
+
+INSERT INTO Concert VALUES (6, "04-07-2019", "19:00:00", "Estádio do Restelo", 22)
+INSERT INTO GuestArtist VALUES (6, 21);
 
 --------------------------------
 
@@ -157,51 +167,119 @@ INSERT INTO LikedPodcastEpisode VALUES (2, 1, 3);
 
 --------------------------------
 
-INSERT INTO Album VALUES (1, "Sour", 5, "00:16:56", "2021", 20);
-INSERT INTO Song VALUES (1, "good 4 u", "00:02:58", TRUE, "Pop", 1098075334, "2021", 1, 1);
-INSERT INTO Song VALUES (2, "traitor", "00:03:49", TRUE, "Pop", 520740950, "2021", 1, 2);
-INSERT INTO Song VALUES (3, "drivers license", "00:04:02", TRUE, "Pop", 1190809499, "2021", 1, 3);
-INSERT INTO Song VALUES (4, "deja vu", "00:03:35", TRUE, "Pop", 654698423, "2021", 1, 4);
-INSERT INTO Song VALUES (5, "favorite crime", "00:02:32", TRUE, "Pop", 137196234, "2021", 1, 5);
+INSERT INTO Album VALUES (1, "Sour", 11, "00:34:46", "2021", 20);
+INSERT INTO Song VALUES (1, "brutal", "00:02:23", TRUE, "Pop", 262424795, 1, 1);
+INSERT INTO Song VALUES (2, "traitor", "00:03:49", FALSE, "Pop", 520740950, 1, 2);
+INSERT INTO Song VALUES (3, "drivers license", "00:04:02", TRUE, "Pop", 1190809499, 1, 3);
+INSERT INTO Song VALUES (4, "1 step forward, 3 steps back", "00:02:43", TRUE, "Pop",168517109, 1, 4);
+INSERT INTO Song VALUES (5, "deja vu", "00:03:35", TRUE, "Pop", 654698423, 1, 5);
+INSERT INTO Song VALUES (6, "good 4 u", "00:02:58", TRUE, "Pop", 1098075334, 1, 6);
+INSERT INTO Song VALUES (7, "enough for you", "00:03:22", FALSE, "Pop", 191431308, 1, 7);
+INSERT INTO Song VALUES (8, "happier", "00:02:55", TRUE, "Pop", 379280079, 1, 8);
+INSERT INTO Song VALUES (9, "jealousy,jealousy", "00:02:53", FALSE, "Pop", 288466335, 1, 9);
+INSERT INTO Song VALUES (10, "favorite crime", "00:02:32", FALSE, "Pop", 137196234, 1, 10);
+INSERT INTO Song VALUES (11, "hope ur ok", "00:03:29", FALSE, "Pop", 137486281, 1, 11);
 
-INSERT INTO Album VALUES (2, "Simulation Theory", 3, "00:11:48", "2018", 12);
-INSERT INTO Song VALUES (6,"algorithm", "00:04:05", FALSE, "Rock", 20689183, "2018", 2, 1);
-INSERT INTO Song VALUES (7,"pressure", "00:03:55", FALSE, "Rock", 78816074, "2018", 2, 2);
-INSERT INTO Song VALUES (8,"dig down", "00:03:48", FALSE, "Rock", 53881508, "2018", 2, 3);
+
+INSERT INTO Album VALUES (2, "Simulation Theory", 11, "00:42:02", "2018", 12);
+INSERT INTO Song VALUES (12,"Algorithm", "00:04:05", FALSE, "Rock", 20689183, 2, 1);
+INSERT INTO Song VALUES (13, "The Dark Side", "00:03:47", FALSE, "Rock", 42610124, 2, 2);
+INSERT INTO Song VALUES (14,"Pressure", "00:03:55", FALSE, "Rock", 78816074, 2, 3);
+INSERT INTO Song VALUES (15, "Propaganda", "00:03:00", FALSE, "Rock", 17312388, 2, 4);
+INSERT INTO Song VALUES (16, "Break It to Me", "00:03:37", FALSE, "Rock", 13712317, 2, 5);
+INSERT INTO Song VALUES (17, "Something Human", "00:03:46", FALSE, "Rock", 36004014, 2, 6);
+INSERT INTO Song VALUES (18, "Thought Contagion", "00:03:26", FALSE, "Rock", 62583068, 2 , 7);
+INSERT INTO Song VALUES (19, "Get up and Fight", "00:04:04", FALSE, "Rock", 12081230,, 2, 8);
+INSERT INTO Song VALUES (20, "Blockades", "00:03:50", FALSE, "Rock", 11780509, 2, 9);
+INSERT INTO Song VALUES (21,"Dig Down", "00:03:48", FALSE, "Rock", 53881508, 2, 10);
+INSERT INTO Song VALUES (22, "The Void", "00:04:44", FALSE, "Rock", 9934881, 2, 11);
+
 
 INSERT INTO Album VALUES (3, "A Cabritinha", 1, "00:03:48", "2004", 15);
-INSERT INTO Song VALUES (9, "A Cabritinha","00:03:48",FALSE, "Pop", 2852020, "2004", 3, 1);
+INSERT INTO Song VALUES (23, "A Cabritinha","00:03:48",FALSE, "Pop", 2852020, 3, 1);
 
-INSERT INTO Album VALUES (4, "The Great War", 4, "00:14:38", "2019", 11);
-INSERT INTO Song VALUES (10, "The Red Baron", "00:03:22", FALSE, "Metal", 39753992, "2019", 4,1);
-INSERT INTO Song VALUES (11, "Fields of Verdun", "00:03:17", FALSE, "Metal", 35990023, "2019", 4,2);
-INSERT INTO Song VALUES (12, "Great War", "00:04:28", FALSE, "Metal", 30153073, "2019", 4,3);
-INSERT INTO Song VALUES (13, "82nd All the Way", "00:03:31", FALSE, "Metal", 22271563, "2019", 4,4);
+
+INSERT INTO Album VALUES (4, "The Great War", 11, "00:38:28", "2019", 11);
+INSERT INTO Song VALUES (24, "The Future of Warfare", "00:03:26", FALSE, "Metal", 12594510, 4, 1);
+INSERT INTO Song VALUES (25, "Seven Pillars of Wisdom", "00:03:02", FALSE, "Metal", 20785219,4, 2);
+INSERT INTO Song VALUES (26, "82nd All the Way", "00:03:31", FALSE, "Metal", 22271563, 4,3);
+INSERT INTO Song VALUES (27, "The Attack of the Dead Men", "00:03:55", FALSE, "Metal", 29938858, 4, 4);
+INSERT INTO Song VALUES (28, "Devil Dogs", "00:03:17", FALSE, "Metal", 14527864, 4, 5);
+INSERT INTO Song VALUES (29, "The Red Baron", "00:03:22", FALSE, "Metal", 39753992, 4,6);
+INSERT INTO Song VALUES (30, "Great War", "00:04:28", FALSE, "Metal", 30153073, 4,7);
+INSERT INTO Song VALUES (31, "A Ghost in the Trenches", "00:03:25", FALSE, "Metal", 10305548, 4, 8);
+INSERT INTO Song VALUES (32, "Fields of Verdun", "00:03:17", FALSE, "Metal", 35990023, 4,9);
+INSERT INTO Song VALUES (33, "The End of the War to End All Wars", "00:04:45", FALSE, "Metal",7113924, 4, 10);
+INSERT INTO Song VALUES (34, "In Flanders Fields", "00:01:56", FALSE, "Metal", 4830710, 4, 11);
+
+
 
 INSERT INTO Album VALUES (5, "Broken Glass", 1, "00:03:37", "2020", 14);
-INSERT INTO Song VALUES (14, "Broken Glass", "00:03:37", FALSE, "Indie", 4783, "2020", 5, 1);
+INSERT INTO Song VALUES (35, "Broken Glass", "00:03:37", FALSE, "Indie", 4783, 5, 1);
 
-INSERT INTO Album VALUES (6, "Endgame", 3, "00:11:16", "2011", 19);
-INSERT INTO Song VALUES (15, "Make It Stop", "00:03:54", FALSE, "Rock",54911809, "2011", 6, 1);
-INSERT INTO Song VALUES (16, "Satellite", "00:03:58", FALSE, "Rock",147642252, "2011", 6, 2);
-INSERT INTO Song VALUES (17, "Endgame", "00:03:24", FALSE, "Rock",10105051, "2011", 6, 3);
 
-INSERT INTO Album VALUES (7, "A Night At The Opera", 3, "00:13:01", "1975", 13);
-INSERT INTO Song VALUES (18, "Bohemian Rhapsody", "00:05:54", FALSE, "Rock",1664659500, "1975", 7, 1);
-INSERT INTO Song VALUES (19, "Love of my Life", "00:03:37", FALSE, "Rock",293321939, "1975", 7, 2);
-INSERT INTO Song VALUES (20, "'39", "00:03:30", FALSE, "Rock",48172668, "1975", 7, 3);
+INSERT INTO Album VALUES (6, "Endgame", 12, "00:46:05", "2011", 19);
+INSERT INTO Song VALUES (36, "Architects", "00:03:42", FALSE, "Rock", 22028374, 6, 1);
+INSERT INTO Song VALUES (37, "Help Is On The Way", "00:03:57", FALSE, "Rock", 45502912, 6, 2);
+INSERT INTO Song VALUES (38, "Make It Stop(September's Children)", "00:03:54", FALSE, "Rock",54911809, 6, 3);
+INSERT INTO Song VALUES (39, "Disparity By Design", "00:03:48", FALSE, "Rock", 9485152, 6, 4);
+INSERT INTO Song VALUES (40, "Satellite", "00:03:58", FALSE, "Rock",147642252, 6, 5);
+INSERT INTO Song VALUES (41, "Midnight Hands", "00:04:17", FALSE, "Rock", 9087046, 6, 6);
+INSERT INTO Song VALUES (42, "Survivor Guilt", "00:03:59", FALSE, "Rock", 12522456, 6, 7);
+INSERT INTO Song VALUES (43, "Broken Mirrors", "00:03:54", FALSE, "Rock", 9399696, 6, 8);
+INSERT INTO Song VALUES (44, "Wait For Me", "00:03:39", FALSE, "Rock", 11741955, 6, 9);
+INSERT INTO Song VALUES (45, "A Gentlemen's Coup", "00:03:46", FALSE, "Rock", 8858463, 6, 10);
+INSERT INTO Song VALUES (46, "This Is Letting Go", "00:03:41", FALSE, "Rock", 15933423, 6, 11);
+INSERT INTO Song VALUES (47, "Endgame", "00:03:24", FALSE, "Rock",10105051, 6, 12);
 
-INSERT INTO Album VALUES (8, "Smells Like Teen Spirit", 1, "00:05:01", "1991", 17);
-INSERT INTO Song VALUES (21, "Smells Like Teen Spirit", "00:05:01", FALSE, "Rock", 1141145309, "1991", 8, 1);
 
-INSERT INTO Album VALUES (9, "The Pretender", 1, "00:04:29", "2007", 18);
-INSERT INTO Song VALUES (22, "The Pretender", "00:04:29", FALSE, "Rock", 468751521, "2007", 9, 1);
+INSERT INTO Album VALUES (7, "A Night At The Opera", 12, "00:43:05", "1975", 13);
+INSERT INTO Song VALUES (48, "Death Om Two Legs", "00:03:43", FALSE, "Rock", 40072359, 7, 1);
+INSERT INTO Song VALUES (49, "Lazing On A Sunday Afternoon", "00:01:07", FALSE, "Rock", 27642189, 7, 2);
+INSERT INTO Song VALUES (50, "I'm In Love With My Car", "00:03:04", FALSE, "Rock", 16479030, 7, 3);
+INSERT INTO Song VALUES (51, "You're My Best Friend", "00:02:50", FALSE, "Rock", 212451576, 7, 4);
+INSERT INTO Song VALUES (52, "'39", "00:03:30", FALSE, "Rock",48172668, 7, 5);
+INSERT INTO Song VALUES (53, "Sweet Lady", "00:04:02", FALSE, "Rock", 8033683, 7, 6);
+INSERT INTO Song VALUES (54, "Seaside Rendezvous", "00:02:14", FALSE, "Rock", 12625273, 7, 7);
+INSERT INTO Song VALUES (55, "The Prophet's Song", "00:08:20", FALSE, "Rock", 10129464, 7, 8);
+INSERT INTO Song VALUES (56, "Love of my Life", "00:03:37", FALSE, "Rock",293321939, 7, 9);
+INSERT INTO Song VALUES (57, "Good Company", "00:03:23", FALSE, "Rock", 8441,159, 7, 10);
+INSERT INTO Song VALUES (58, "Bohemian Rhapsody", "00:05:54", FALSE, "Rock",1664659500, 7, 11);
+INSERT INTO Song VALUES (59, "God Save The Queen", "00:01:15", FALSE, "Rock", 10241135, 7, 12);
+
+
+INSERT INTO Album VALUES (8, "Nevermind", 13, "00:49:15", "1991", 17);
+INSERT INTO Song VALUES (60, "Smells Like Teen Spirit", "00:05:01", FALSE, "Rock", 1141145309, 8, 1);
+INSERT INTO Song VALUES (61, "In Bloom", "00:04:15", FALSE, "Rock", 184278940, 8, 2);
+INSERT INTO Song VALUES (62, "Come As You Are", "00:03:38", FALSE, "Rock", 695883998, 8, 3);
+INSERT INTO Song VALUES (63, "Breed", "00:03:04", FALSE, "Rock", 74776760, 8, 4);
+INSERT INTO Song VALUES (64, "Lithium", "00:04:17", FALSE, "Rock", 360224271, 8, 5);
+INSERT INTO Song VALUES (65, "Polly", "00:02:53", FALSE, "Rock", 79095508, 8, 6);
+INSERT INTO Song VALUES (66, "Territorial Pissings", "00:02:22", FALSE, "Rock",52876620, 8 , 7);
+INSERT INTO Song VALUES (67, "Drain You", "00:03:43", FALSE, "Rock", 88138574, 8, 8);
+INSERT INTO Song VALUES (68, "Lounge Act", "00:02:36", TRUE, "Rock", 54566458, 8, 9);
+INSERT INTO Song VALUES (69, "Stay Away", "00:03:31", FALSE, "Rock", 50175712, 8, 10);
+INSERT INTO Song VALUES (70, "On A Plain", "00:03:14", FALSE, "Rock", 40604849, 8, 11);
+INSERT INTO Song VALUES (71, "Something In The Way", "00:03:52", FALSE, "Rock", 92270021, 8, 12);
+INSERT INTO Song VALUES (72, "Endless, Nameless", "00:06:43", FALSE, "Rock", 20114059, 8, 13);
+
+
+INSERT INTO Album VALUES (9, "Echoes, Silence, Patience & Grace", 12, "00:51:12", "2007", 18);
+INSERT INTO Song VALUES (73, "The Pretender", "00:04:29", FALSE, "Rock", 468751521, 9, 1);
+INSERT INTO Song VALUES (74, "Let It Die", "00:04:04", FALSE, "Rock", 34621720, 9, 2);
+INSERT INTO Song VALUES (75, "Erase/Replace", "00:04:13", FALSE, "Rock", 101965076, 9, 3);
+INSERT INTO Song VALUES (76, "Long Road To Ruin", "00:03:44", FALSE, "Rock", 48661266, 9, 4);
+INSERT INTO Song VALUES (77, "Come Alive", "00:05:10", FALSE, "Rock", 20626072, 9, 5);
+INSERT INTO Song VALUES (78, "Stranger Things Have Happened", "00:05:21", FALSE, "Rock", 30341165, 9, 6);
+INSERT INTO Song VALUES (79, "Cheer Up, Boys (Your Make Up Is Running)", "00:03:41", FALSE, "Rock", 8635089, 9, 7);
+INSERT INTO Song VALUES (80, "Summer's End", "00:04:37", FALSE, "Rock", 9062072)
+
 
 INSERT INTO Album VALUES (10, "Circo de Feras", 4, "00:16:09", "1987", 16);
-INSERT INTO Song VALUES (23, "Contentores", "00:03:51", FALSE, "Rock", 3515421, "1987", 10, 1);
-INSERT INTO Song VALUES (24, "Circo de Feras", "00:03:53", FALSE, "Rock", 1198802, "1987", 10, 2);
-INSERT INTO Song VALUES (25, "Não Sou O Único", "00:03:38", FALSE, "Rock", 1941543, "1987", 10, 3);
-INSERT INTO Song VALUES (26, "Vida Malvada", "00:04:47", FALSE, "Rock", 375219, "1987", 10, 4);
+INSERT INTO Song VALUES (23, "Contentores", "00:03:51", FALSE, "Rock", 3515421, 10, 1);
+INSERT INTO Song VALUES (24, "Circo de Feras", "00:03:53", FALSE, "Rock", 1198802, 10, 2);
+INSERT INTO Song VALUES (25, "Não Sou O Único", "00:03:38", FALSE, "Rock", 1941543, 10, 3);
+INSERT INTO Song VALUES (26, "Vida Malvada", "00:04:47", FALSE, "Rock", 375219, 10, 4);
 
 --------------------------------
 

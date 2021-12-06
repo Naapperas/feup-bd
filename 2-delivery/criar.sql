@@ -145,7 +145,6 @@ CREATE TABLE Song (
     isExplicit BOOLEAN DEFAULT FALSE,
     genre TEXT NOT NULL CHECK (genre IN ("Rock", "Pop", "HipHop", "Rap", "Metal", "Jazz", "Lo-fi", "Blues", "Reggae", "Indie", "Clássica")),
     numberOfStreams INTEGER NOT NULL CHECK (numberOfStreams >= 0),
-    releaseYear DATE NOT NULL,
     albumId INTEGER REFERENCES Album(id),
     positionInAlbum INTEGER NOT NULL CHECK (positionInAlbum >= 1)
 );
