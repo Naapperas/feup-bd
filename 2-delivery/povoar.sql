@@ -287,7 +287,7 @@ INSERT INTO Song VALUES (87, "Pensão", "00:03:59", FALSE, "Rock", 31146, 10, 3)
 INSERT INTO Song VALUES (88, "Desemprego", "00:03:41", FALSE, "Rock", 25998, 10, 4);
 INSERT INTO Song VALUES (89, "Esta Cidade", "00:02:20", FALSE, "Rock", 63878, 10, 5);
 INSERT INTO Song VALUES (90, "Não Sou O Único", "00:03:38", FALSE, "Rock", 1941543, 10, 6);
-INSERT INTO Song VALUES (91, "N' América", "00:04:42", FALSE, "Rock" 144557, 10, 7);
+INSERT INTO Song VALUES (91, "N' América", "00:04:42", FALSE, "Rock", 144557, 10, 7);
 INSERT INTO Song VALUES (92, "Vida Malvada", "00:04:47", FALSE, "Rock", 375219, 10, 8);
 INSERT INTO Song VALUES (93, "Circo de Feras", "00:03:53", FALSE, "Rock", 1198802, 10, 9);
 
@@ -337,27 +337,27 @@ INSERT INTO SongPositionInPlaylist VALUES (94,1,18);
 
 
 INSERT INTO Playlist VALUES (2, "Smol Chungus", TRUE, 18, "01:06:44", 2);
-INSERT INTO Playlist VALUES (95, 2, 1);
-INSERT INTO Playlist VALUES (74, 2, 2);
-INSERT INTO Playlist VALUES (50, 2, 3);
-INSERT INTO Playlist VALUES (83, 2, 4);
-INSERT INTO Playlist VALUES (68, 2, 5);
-INSERT INTO Playlist VALUES (79, 2, 6);
-INSERT INTO Playlist VALUES (104, 2, 7);
-INSERT INTO Playlist VALUES (71, 2, 8);
-INSERT INTO Playlist VALUES (81, 2, 9);
-INSERT INTO Playlist VALUES (21, 2, 10);
-INSERT INTO Playlist VALUES (16, 2, 11);
-INSERT INTO Playlist VALUES (100, 2, 12);
-INSERT INTO Playlist VALUES (49, 2, 13);
-INSERT INTO Playlist VALUES (85, 2, 14);
-INSERT INTO Playlist VALUES (40, 2, 15);
-INSERT INTO Playlist VALUES (33, 2, 16);
-INSERT INTO Playlist VALUES (24, 2, 17);
-INSERT INTO Playlist VALUES (61, 2, 18);
+INSERT INTO SongPositionInPlaylist VALUES (95, 2, 1);
+INSERT INTO SongPositionInPlaylist VALUES (74, 2, 2);
+INSERT INTO SongPositionInPlaylist VALUES (50, 2, 3);
+INSERT INTO SongPositionInPlaylist VALUES (83, 2, 4);
+INSERT INTO SongPositionInPlaylist VALUES (68, 2, 5);
+INSERT INTO SongPositionInPlaylist VALUES (79, 2, 6);
+INSERT INTO SongPositionInPlaylist VALUES (104, 2, 7);
+INSERT INTO SongPositionInPlaylist VALUES (71, 2, 8);
+INSERT INTO SongPositionInPlaylist VALUES (81, 2, 9);
+INSERT INTO SongPositionInPlaylist VALUES (21, 2, 10);
+INSERT INTO SongPositionInPlaylist VALUES (16, 2, 11);
+INSERT INTO SongPositionInPlaylist VALUES (100, 2, 12);
+INSERT INTO SongPositionInPlaylist VALUES (49, 2, 13);
+INSERT INTO SongPositionInPlaylist VALUES (85, 2, 14);
+INSERT INTO SongPositionInPlaylist VALUES (40, 2, 15);
+INSERT INTO SongPositionInPlaylist VALUES (33, 2, 16);
+INSERT INTO SongPositionInPlaylist VALUES (24, 2, 17);
+INSERT INTO SongPositionInPlaylist VALUES (61, 2, 18);
 
 
-INSERT INTO Playlist VALUES (3, "Tuga", FALSE,10 , "00:42:11", 4)
+INSERT INTO Playlist VALUES (3, "Tuga", FALSE, 10, "00:42:11", 4);
 INSERT INTO SongPositionInPlaylist VALUES (23, 3, 1);
 INSERT INTO SongPositionInPlaylist VALUES (95, 3, 2);
 INSERT INTO SongPositionInPlaylist VALUES (85, 3, 3);
