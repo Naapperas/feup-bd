@@ -482,5 +482,17 @@ INSERT INTO Collaborator VALUES (2, 2);
 
 --------------------------------
 
-INSERT INTO FeaturedArtists VALUES (10, 15);
-INSERT INTO FeaturedArtists VALUES (21, 18);
+INSERT INTO FeaturedArtists VALUES (94, 21);
+INSERT INTO FeaturedArtists VALUES (60, 18);
+INSERT INTO FeaturedArtists VALUES (61, 18);
+INSERT INTO FeaturedArtists VALUES (62, 18);
+INSERT INTO FeaturedArtists VALUES (63, 18);
+INSERT INTO FeaturedArtists VALUES (64, 18);
+INSERT INTO FeaturedArtists VALUES (65, 18);
+INSERT INTO FeaturedArtists VALUES (66, 18);
+INSERT INTO FeaturedArtists VALUES (67, 18);
+INSERT INTO FeaturedArtists VALUES (68, 18);
+INSERT INTO FeaturedArtists VALUES (69, 18);
+INSERT INTO FeaturedArtists VALUES (70, 18);
+INSERT INTO FeaturedArtists VALUES (71, 18);
+INSERT INTO FeaturedArtists VALUES (72, 18);
