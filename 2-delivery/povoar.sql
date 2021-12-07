@@ -369,13 +369,26 @@ INSERT INTO SongPositionInPlaylist VALUES (90, 3, 7);
 INSERT INTO SongPositionInPlaylist VALUES (91, 3, 8);
 INSERT INTO SongPositionInPlaylist VALUES (92, 3, 9);
 INSERT INTO SongPositionInPlaylist VALUES (93, 3, 10);
+
 --------------------------------
 
 INSERT INTO LikedAlbum VALUES (1, 2);
 INSERT INTO LikedAlbum VALUES (4, 2);
 INSERT INTO LikedAlbum VALUES (4, 1);
 INSERT INTO LikedAlbum VALUES (8, 1);
-INSERT INTO LikedAlbum VALUES (1, 20);
+INSERT INTO LikedAlbum VALUES (10, 5);
+INSERT INTO LikedAlbum VALUES (7, 7);
+INSERT INTO LikedAlbum VALUES (6, 17);
+INSERT INTO LikedAlbum VALUES (12, 2);
+INSERT INTO LikedAlbum VALUES (8, 9);
+INSERT INTO LikedAlbum VALUES (8, 8);
+INSERT INTO LikedAlbum VALUES (9, 17);
+INSERT INTO LikedAlbum VALUES (4, 3);
+INSERT INTO LikedAlbum VALUES (10, 20);
+INSERT INTO LikedAlbum VALUES (13, 9);
+INSERT INTO LikedAlbum VALUES (3, 8);
+INSERT INTO LikedAlbum VALUES (10, 6);
+INSERT INTO LikedAlbum VALUES (8, 18);
 
 --------------------------------
 
