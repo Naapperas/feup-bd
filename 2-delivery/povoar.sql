@@ -474,7 +474,11 @@ INSERT INTO LikedPlaylist VALUES (3, 12);
 
 INSERT INTO Collaborator VALUES (1, 2);
 INSERT INTO Collaborator VALUES (2, 1);
-INSERT INTO Collaborator VALUES (1,3);
+INSERT INTO Collaborator VALUES (1, 3);
+INSERT INTO Collaborator VALUES (3, 6);
+INSERT INTO Collaborator VALUES (2, 7);
+INSERT INTO Collaborator VALUES (2, 5);
+INSERT INTO Collaborator VALUES (2, 2);
 
 --------------------------------
 
