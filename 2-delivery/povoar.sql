@@ -455,19 +455,20 @@ INSERT INTO LikedSong VALUES (30, 3);
 
 --------------------------------
 
-INSERT INTO LikedPlaylist VALUES (1, 1);
-INSERT INTO LikedPlaylist VALUES (1, 2);
-INSERT INTO LikedPlaylist VALUES (1, 3);
-INSERT INTO LikedPlaylist VALUES (1, 4);
-INSERT INTO LikedPlaylist VALUES (1, 5);
-INSERT INTO LikedPlaylist VALUES (1, 6);
-INSERT INTO LikedPlaylist VALUES (1, 7);
+INSERT INTO LikedPlaylist VALUES (2, 22);
+INSERT INTO LikedPlaylist VALUES (2, 19);
 INSERT INTO LikedPlaylist VALUES (1, 8);
-INSERT INTO LikedPlaylist VALUES (1, 9);
-INSERT INTO LikedPlaylist VALUES (1, 10);
-
-INSERT INTO LikedPlaylist VALUES (2, 1);
+INSERT INTO LikedPlaylist VALUES (2, 20);
 INSERT INTO LikedPlaylist VALUES (2, 2);
+INSERT INTO LikedPlaylist VALUES (1, 13);
+INSERT INTO LikedPlaylist VALUES (3, 20);
+INSERT INTO LikedPlaylist VALUES (1, 12);
+INSERT INTO LikedPlaylist VALUES (3, 2);
+INSERT INTO LikedPlaylist VALUES (1, 16);
+INSERT INTO LikedPlaylist VALUES (2, 15);
+INSERT INTO LikedPlaylist VALUES (2, 6);
+INSERT INTO LikedPlaylist VALUES (3, 14);
+INSERT INTO LikedPlaylist VALUES (3, 12);
 
 --------------------------------
 
