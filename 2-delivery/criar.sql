@@ -131,7 +131,7 @@ CREATE TABLE Album (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     albumName TEXT NOT NULL,
     numberOfSongs INTEGER NOT NULL CHECK (numberOfSongs >= 1) DEFAULT 1,
-    duration TIME NOT NULL CHECK (durations >= 0) DEFAULT 0,
+    duration TIME NOT NULL CHECK (duration >= 0) DEFAULT 0,
     releaseYear DATE NOT NULL,
     mainArtist INTEGER REFERENCES Artist(id)
 );
@@ -156,7 +156,7 @@ CREATE TABLE Playlist (
     playlistName TEXT NOT NULL,
     isPrivate BOOLEAN DEFAULT FALSE,
     numberOfSongs INTEGER NOT NULL CHECK (numberOfSongs >= 0) DEFAULT 0,
-    duration TIME NOT NULL CHECK (durations >= 0) DEFAULT 0,
+    duration TIME NOT NULL CHECK (duration >= 0) DEFAULT 0,
     creator INTEGER REFERENCES User(id)
 );
 

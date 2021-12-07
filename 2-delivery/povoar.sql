@@ -74,10 +74,11 @@ INSERT INTO Artist VALUES (20, "'I love her' - random fan", 44544112);
 
 INSERT INTO User VALUES (21, "Toy", "voucantarvoudançar@gmail.com", TRUE, "10-02-1963");
 INSERT INTO RankingByMonthlyListeners VALUES (65914, 11);
-INSERT INTO Artist VALUES (21, "Vou mh mh até me cançar", 65914);
+INSERT INTO Artist VALUES (21, "Vou mh mh até me cansar", 65914);
 
 INSERT INTO User VALUES (22, "Trivium", "Trivum@hotmail.com", TRUE, "04-10-1999");
-INSERT INTO RankingByMonthlyListeners VALUES (1856614, 8)
+INSERT INTO RankingByMonthlyListeners VALUES (1856614, 8);
+INSERT INTO Artist VALUES (22, NULL, 65914);
 
 --------------------------------
 
@@ -95,7 +96,7 @@ INSERT INTO GuestArtist VALUES (4, 11);
 
 INSERT INTO Concert VALUES (5, "25-12-2012", "22:00:00", "Wembley", 12);
 
-INSERT INTO Concert VALUES (6, "04-07-2019", "19:00:00", "Estádio do Restelo", 22)
+INSERT INTO Concert VALUES (6, "04-07-2019", "19:00:00", "Estádio do Restelo", 22);
 INSERT INTO GuestArtist VALUES (6, 21);
 
 --------------------------------
@@ -189,7 +190,7 @@ INSERT INTO Song VALUES (15, "Propaganda", "00:03:00", FALSE, "Rock", 17312388, 
 INSERT INTO Song VALUES (16, "Break It to Me", "00:03:37", FALSE, "Rock", 13712317, 2, 5);
 INSERT INTO Song VALUES (17, "Something Human", "00:03:46", FALSE, "Rock", 36004014, 2, 6);
 INSERT INTO Song VALUES (18, "Thought Contagion", "00:03:26", FALSE, "Rock", 62583068, 2 , 7);
-INSERT INTO Song VALUES (19, "Get up and Fight", "00:04:04", FALSE, "Rock", 12081230,, 2, 8);
+INSERT INTO Song VALUES (19, "Get up and Fight", "00:04:04", FALSE, "Rock", 12081230, 2, 8);
 INSERT INTO Song VALUES (20, "Blockades", "00:03:50", FALSE, "Rock", 11780509, 2, 9);
 INSERT INTO Song VALUES (21,"Dig Down", "00:03:48", FALSE, "Rock", 53881508, 2, 10);
 INSERT INTO Song VALUES (22, "The Void", "00:04:44", FALSE, "Rock", 9934881, 2, 11);
@@ -243,7 +244,7 @@ INSERT INTO Song VALUES (53, "Sweet Lady", "00:04:02", FALSE, "Rock", 8033683, 7
 INSERT INTO Song VALUES (54, "Seaside Rendezvous", "00:02:14", FALSE, "Rock", 12625273, 7, 7);
 INSERT INTO Song VALUES (55, "The Prophet's Song", "00:08:20", FALSE, "Rock", 10129464, 7, 8);
 INSERT INTO Song VALUES (56, "Love of my Life", "00:03:37", FALSE, "Rock",293321939, 7, 9);
-INSERT INTO Song VALUES (57, "Good Company", "00:03:23", FALSE, "Rock", 8441,159, 7, 10);
+INSERT INTO Song VALUES (57, "Good Company", "00:03:23", FALSE, "Rock", 8441159, 7, 10);
 INSERT INTO Song VALUES (58, "Bohemian Rhapsody", "00:05:54", FALSE, "Rock",1664659500, 7, 11);
 INSERT INTO Song VALUES (59, "God Save The Queen", "00:01:15", FALSE, "Rock", 10241135, 7, 12);
 
