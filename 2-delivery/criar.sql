@@ -19,6 +19,7 @@ DROP TABLE IF EXISTS LikedSong;
 DROP TABLE IF EXISTS LikedPlaylist;
 DROP TABLE IF EXISTS Collaborator;
 DROP TABLE IF EXISTS FeaturedArtists;
+DROP TABLE IF EXISTS Follows;
 
 --------------------------------------
 
@@ -134,7 +135,7 @@ CREATE TABLE Album (
 CREATE TABLE Song (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     songName TEXT NOT NULL,
-    duration TIME NOT NULL CHECK (duration >= 0),
+    duration TIME NOT NULL CHECK (duration > 0),
     isExplicit BOOLEAN DEFAULT FALSE,
     genre TEXT NOT NULL CHECK (genre IN ("Rock", "Pop", "HipHop", "Rap", "Metal", "Jazz", "Lo-fi", "Blues", "Reggae", "Indie", "Clássica")),
     numberOfStreams INTEGER NOT NULL CHECK (numberOfStreams >= 0),
@@ -147,7 +148,7 @@ CREATE TABLE Song (
 CREATE TABLE Playlist (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     playlistName TEXT NOT NULL,
-    isPrivate BOOLEAN DEFAULT FALSE,
+    isPrivate BOOLEAN DEFAULT TRUE,
     numberOfSongs INTEGER CHECK (numberOfSongs >= 0) DEFAULT 0,
     duration TIME CHECK (duration >= 0) DEFAULT 0,
     creator INTEGER REFERENCES User(id)
