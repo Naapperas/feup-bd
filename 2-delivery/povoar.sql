@@ -468,3 +468,13 @@ INSERT INTO FeaturedArtists VALUES (69, 18);
 INSERT INTO FeaturedArtists VALUES (70, 18);
 INSERT INTO FeaturedArtists VALUES (71, 18);
 INSERT INTO FeaturedArtists VALUES (72, 18);
+
+--------------------------------
+
+INSERT INTO Follows VALUES (18,22);
+INSERT INTO Follows VALUES (14,15);
+INSERT INTO Follows VALUES (8,3);
+INSERT INTO Follows VALUES (14,1);
+INSERT INTO Follows VALUES (19,22);
+INSERT INTO Follows VALUES (2,22);
+INSERT INTO Follows VALUES (15,2);

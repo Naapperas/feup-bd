@@ -203,3 +203,11 @@ CREATE TABLE FeaturedArtists (
 );
 
 --------------------------------------
+
+CREATE TABLE Follows (
+    UserId1 INTEGER REFERENCES User(id),
+    UserId2 INTEGER REFERENCES User(id),
+    CONSTRAINT FOLLOW_USER_ID PRIMARY KEY(UserId1, UserId2)
+);
+
+--------------------------------------
