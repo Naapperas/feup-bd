@@ -33,52 +33,40 @@ INSERT INTO Consumer VALUES (10, "Family");
 --------------------------------
 
 INSERT INTO User VALUES (11, "Sabaton", "sabaton@gmail.com", TRUE, "05-10-1999");
-INSERT INTO RankingByMonthlyListeners VALUES (2626219, 7);
 INSERT INTO Artist VALUES (11, "Swedish Power Metal", 2626219);
 
 INSERT INTO User VALUES (12, "Muse", "muse@muse.muse", TRUE, "01-01-1994");
-INSERT INTO RankingByMonthlyListeners VALUES (10703319, 5);
 INSERT INTO Artist VALUES (12, "British Rock", 10703319);
 
 INSERT INTO User VALUES (13, "Queen", "frederico.mercurio@gmail.com", TRUE, "20-02-1970");
-INSERT INTO RankingByMonthlyListeners VALUES (39181301, 2);
 INSERT INTO Artist VALUES (13, "British", 39181301);
 
 INSERT INTO User VALUES (14, "Call Me Alice", "cma@edu.fe.up.pt", FALSE, "25-04-2015");
-INSERT INTO RankingByMonthlyListeners VALUES (202, 12);
 INSERT INTO Artist VALUES (14, NULL, 202);
 
 INSERT INTO User VALUES (15, "Quim Barreiros", "quim@gmail.com", TRUE, "19-06-1947");
-INSERT INTO RankingByMonthlyListeners VALUES (76375, 10);
 INSERT INTO Artist VALUES (15, "Pimba", 76375);
 
 INSERT INTO User VALUES (16, "Xutos e Pontapés", "xutos@mail.pt", TRUE, "02-07-1980");
-INSERT INTO RankingByMonthlyListeners VALUES (155207, 9);
 INSERT INTO Artist VALUES (16, "Contentores", 155207);
 
 INSERT INTO User VALUES (17, "Nirvana", "kurt.cubano@gmail.com", TRUE, "23-03-1987");
-INSERT INTO RankingByMonthlyListeners VALUES (20608408, 3);
 INSERT INTO Artist VALUES (17, "Grunge American band", 20608408);
 
 INSERT INTO User VALUES (18, "Foo Fighters", "baterista.dos.nirvana@yahoo.com", TRUE, "24-09-1994");
-INSERT INTO RankingByMonthlyListeners VALUES (13073505, 4);
 INSERT INTO Artist VALUES (18, "Drums", 13073505);
 
 INSERT INTO User VALUES (19, "Rise Against", "ra@gmail.com", TRUE, "20-02-1999");
-INSERT INTO RankingByMonthlyListeners VALUES (5791016, 6);
 INSERT INTO Artist VALUES (19, "Who ?", 5791016);
 
 INSERT INTO User VALUES (20, "Olivia Rodrigo", "xoxo@facebook.pt", TRUE, "20-03-2002");
-INSERT INTO RankingByMonthlyListeners VALUES (44544112, 1);
 INSERT INTO Artist VALUES (20, "'I love her' - random fan", 44544112);
 
 INSERT INTO User VALUES (21, "Toy", "voucantarvoudançar@gmail.com", TRUE, "10-02-1963");
-INSERT INTO RankingByMonthlyListeners VALUES (65914, 11);
 INSERT INTO Artist VALUES (21, "Vou mh mh até me cansar", 65914);
 
 INSERT INTO User VALUES (22, "Trivium", "Trivum@hotmail.com", TRUE, "04-10-1999");
-INSERT INTO RankingByMonthlyListeners VALUES (1856614, 8);
-INSERT INTO Artist VALUES (22, NULL, 65914);
+INSERT INTO Artist VALUES (22, NULL, 1856614);
 
 --------------------------------
 
@@ -181,7 +169,6 @@ INSERT INTO Song VALUES (9, "jealousy,jealousy", "00:02:53", FALSE, "Pop", 28846
 INSERT INTO Song VALUES (10, "favorite crime", "00:02:32", FALSE, "Pop", 137196234, 1, 10);
 INSERT INTO Song VALUES (11, "hope ur ok", "00:03:29", FALSE, "Pop", 137486281, 1, 11);
 
-
 INSERT INTO Album VALUES (2, "Simulation Theory", 11, "00:42:02", "2018", 12);
 INSERT INTO Song VALUES (12,"Algorithm", "00:04:05", FALSE, "Rock", 20689183, 2, 1);
 INSERT INTO Song VALUES (13, "The Dark Side", "00:03:47", FALSE, "Rock", 42610124, 2, 2);
@@ -195,10 +182,8 @@ INSERT INTO Song VALUES (20, "Blockades", "00:03:50", FALSE, "Rock", 11780509, 2
 INSERT INTO Song VALUES (21,"Dig Down", "00:03:48", FALSE, "Rock", 53881508, 2, 10);
 INSERT INTO Song VALUES (22, "The Void", "00:04:44", FALSE, "Rock", 9934881, 2, 11);
 
-
 INSERT INTO Album VALUES (3, "A Cabritinha", 1, "00:03:48", "2004", 15);
 INSERT INTO Song VALUES (23, "A Cabritinha","00:03:48",FALSE, "Pop", 2852020, 3, 1);
-
 
 INSERT INTO Album VALUES (4, "The Great War", 11, "00:38:28", "2019", 11);
 INSERT INTO Song VALUES (24, "The Future of Warfare", "00:03:26", FALSE, "Metal", 12594510, 4, 1);
@@ -213,11 +198,8 @@ INSERT INTO Song VALUES (32, "Fields of Verdun", "00:03:17", FALSE, "Metal", 359
 INSERT INTO Song VALUES (33, "The End of the War to End All Wars", "00:04:45", FALSE, "Metal",7113924, 4, 10);
 INSERT INTO Song VALUES (34, "In Flanders Fields", "00:01:56", FALSE, "Metal", 4830710, 4, 11);
 
-
-
 INSERT INTO Album VALUES (5, "Broken Glass", 1, "00:03:37", "2020", 14);
 INSERT INTO Song VALUES (35, "Broken Glass", "00:03:37", FALSE, "Indie", 4783, 5, 1);
-
 
 INSERT INTO Album VALUES (6, "Endgame", 12, "00:46:05", "2011", 19);
 INSERT INTO Song VALUES (36, "Architects", "00:03:42", FALSE, "Rock", 22028374, 6, 1);
@@ -233,7 +215,6 @@ INSERT INTO Song VALUES (45, "A Gentlemen's Coup", "00:03:46", FALSE, "Rock", 88
 INSERT INTO Song VALUES (46, "This Is Letting Go", "00:03:41", FALSE, "Rock", 15933423, 6, 11);
 INSERT INTO Song VALUES (47, "Endgame", "00:03:24", FALSE, "Rock",10105051, 6, 12);
 
-
 INSERT INTO Album VALUES (7, "A Night At The Opera", 12, "00:43:05", "1975", 13);
 INSERT INTO Song VALUES (48, "Death Om Two Legs", "00:03:43", FALSE, "Rock", 40072359, 7, 1);
 INSERT INTO Song VALUES (49, "Lazing On A Sunday Afternoon", "00:01:07", FALSE, "Rock", 27642189, 7, 2);
@@ -247,7 +228,6 @@ INSERT INTO Song VALUES (56, "Love of my Life", "00:03:37", FALSE, "Rock",293321
 INSERT INTO Song VALUES (57, "Good Company", "00:03:23", FALSE, "Rock", 8441159, 7, 10);
 INSERT INTO Song VALUES (58, "Bohemian Rhapsody", "00:05:54", FALSE, "Rock",1664659500, 7, 11);
 INSERT INTO Song VALUES (59, "God Save The Queen", "00:01:15", FALSE, "Rock", 10241135, 7, 12);
-
 
 INSERT INTO Album VALUES (8, "Nevermind", 13, "00:49:15", "1991", 17);
 INSERT INTO Song VALUES (60, "Smells Like Teen Spirit", "00:05:01", FALSE, "Rock", 1141145309, 8, 1);
@@ -264,7 +244,6 @@ INSERT INTO Song VALUES (70, "On A Plain", "00:03:14", FALSE, "Rock", 40604849, 
 INSERT INTO Song VALUES (71, "Something In The Way", "00:03:52", FALSE, "Rock", 92270021, 8, 12);
 INSERT INTO Song VALUES (72, "Endless, Nameless", "00:06:43", FALSE, "Rock", 20114059, 8, 13);
 
-
 INSERT INTO Album VALUES (9, "Echoes, Silence, Patience & Grace", 12, "00:51:12", "2007", 18);
 INSERT INTO Song VALUES (73, "The Pretender", "00:04:29", FALSE, "Rock", 468751521, 9, 1);
 INSERT INTO Song VALUES (74, "Let It Die", "00:04:04", FALSE, "Rock", 34621720, 9, 2);
@@ -279,7 +258,6 @@ INSERT INTO Song VALUES (82, "Statues", "00:03:47", FALSE, "Rock", 7324793, 9, 1
 INSERT INTO Song VALUES (83, "But, Honestly", "00:04:35", FALSE, "Rock", 10297750, 9, 11);
 INSERT INTO Song VALUES (84, "Home", "00:04:53", FALSE, "Rock", 22786095, 9, 12);
 
-
 INSERT INTO Album VALUES (10, "Circo de Feras", 9, "00:34:01", "1987", 16);
 INSERT INTO Song VALUES (85, "Contentores", "00:03:51", FALSE, "Rock", 3515421, 10, 1);
 INSERT INTO Song VALUES (86, "Sai Prá Rua", "00:03:04", FALSE, "Rock", 63235, 10, 2);
@@ -291,10 +269,8 @@ INSERT INTO Song VALUES (91, "N' América", "00:04:42", FALSE, "Rock", 144557, 1
 INSERT INTO Song VALUES (92, "Vida Malvada", "00:04:47", FALSE, "Rock", 375219, 10, 8);
 INSERT INTO Song VALUES (93, "Circo de Feras", "00:03:53", FALSE, "Rock", 1198802, 10, 9);
 
-
 INSERT INTO Album VALUES (11, "Coração Não Tem Idade (Vou Beijar)[feat. Toy]", 1, "00:04:23", "2019", 22);
 INSERT INTO Song VALUES (94, "Coração Não Tem Idade (Vou Beijar)[feat. Toy]", "00:04:23", FALSE, "Metal", 845341, 11, 1);
-
 
 INSERT INTO Album VALUES (12, "Coração Não Tem Idade (Vou Beijar)", 1, "00:04:28", "2017", 21);
 INSERT INTO Song VALUES (95, "Coração Não Tem Idade (Vou Beijar)", "00:04:28", FALSE, "Pop", 3922516, 12, 1);
@@ -310,7 +286,6 @@ INSERT INTO Song VALUES (102, "No Way Back Just Through", "00:03:53", FALSE, "Me
 INSERT INTO Song VALUES (103, "Fall Into Your Hands", "00:07:45", FALSE, "Metal", 841274, 13, 8);
 INSERT INTO Song VALUES (104, "From Dawn To Decadence", "00:04:08", FALSE, "Metal", 703400, 13, 9);
 INSERT INTO Song VALUES (105, "The Phalanx", "00:07:15", FALSE, "Metal", 1542828, 13, 10);
-
 
 --------------------------------
 
@@ -334,8 +309,6 @@ INSERT INTO SongPositionInPlaylist VALUES (85,1,16);
 INSERT INTO SongPositionInPlaylist VALUES (90,1,17);
 INSERT INTO SongPositionInPlaylist VALUES (94,1,18);
 
-
-
 INSERT INTO Playlist VALUES (2, "Smol Chungus", TRUE, 18, "01:06:44", 2);
 INSERT INTO SongPositionInPlaylist VALUES (95, 2, 1);
 INSERT INTO SongPositionInPlaylist VALUES (74, 2, 2);
@@ -355,7 +328,6 @@ INSERT INTO SongPositionInPlaylist VALUES (40, 2, 15);
 INSERT INTO SongPositionInPlaylist VALUES (33, 2, 16);
 INSERT INTO SongPositionInPlaylist VALUES (24, 2, 17);
 INSERT INTO SongPositionInPlaylist VALUES (61, 2, 18);
-
 
 INSERT INTO Playlist VALUES (3, "Tuga", FALSE, 10, "00:42:11", 4);
 INSERT INTO SongPositionInPlaylist VALUES (23, 3, 1);

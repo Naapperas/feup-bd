@@ -32,17 +32,10 @@ CREATE TABLE User (
 
 --------------------------------------
 
-CREATE TABLE RankingByMonthlyListeners (
-    monthlyListeners INTEGER PRIMARY KEY CHECK (monthlyListeners >= 0),
-    ranking INTEGER NOT NULL CHECK (ranking >= 1)
-);
-
---------------------------------------
-
 CREATE TABLE Artist (
     id INTEGER REFERENCES User(id),
     about TEXT,
-    monthlyListeners INTEGER REFERENCES RankingByMonthlyListeners(monthlyListeners),
+    monthlyListeners INTEGER NOT NULL CHECK (monthlyListeners >= 0),
     CONSTRAINT ARTIST_ID PRIMARY KEY(id)
 );
 
@@ -50,7 +43,7 @@ CREATE TABLE Artist (
 
 CREATE TABLE Consumer (
     id INTEGER REFERENCES User(id),
-    paymentPlan TEXT CHECK (paymentPlan IN ("Premium","Free","Duo","Family","Student")) NOT NULL,
+    paymentPlan TEXT CHECK (paymentPlan IN ("Premium","Free","Duo","Family","Student")) DEFAULT "Free",
     CONSTRAINT ARTIST_ID PRIMARY KEY(id)
 );
 
@@ -130,8 +123,8 @@ CREATE TABLE LikedPodcastEpisode (
 CREATE TABLE Album (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     albumName TEXT NOT NULL,
-    numberOfSongs INTEGER NOT NULL CHECK (numberOfSongs >= 1) DEFAULT 1,
-    duration TIME NOT NULL CHECK (duration >= 0) DEFAULT 0,
+    numberOfSongs INTEGER CHECK (numberOfSongs >= 1) DEFAULT 1,
+    duration TIME CHECK (duration >= 0) DEFAULT 0,
     releaseYear DATE NOT NULL,
     mainArtist INTEGER REFERENCES Artist(id)
 );
@@ -155,8 +148,8 @@ CREATE TABLE Playlist (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     playlistName TEXT NOT NULL,
     isPrivate BOOLEAN DEFAULT FALSE,
-    numberOfSongs INTEGER NOT NULL CHECK (numberOfSongs >= 0) DEFAULT 0,
-    duration TIME NOT NULL CHECK (duration >= 0) DEFAULT 0,
+    numberOfSongs INTEGER CHECK (numberOfSongs >= 0) DEFAULT 0,
+    duration TIME CHECK (duration >= 0) DEFAULT 0,
     creator INTEGER REFERENCES User(id)
 );
 
