@@ -44,7 +44,7 @@ CREATE TABLE Artist (
 
 CREATE TABLE Consumer (
     id INTEGER REFERENCES User(id),
-    paymentPlan TEXT CHECK (paymentPlan IN ("Premium","Free","Duo","Family","Student")) DEFAULT "Free",
+    paymentPlan TEXT CHECK (paymentPlan IN ('Premium','Free','Duo','Family','Student')) DEFAULT 'Free',
     CONSTRAINT ARTIST_ID PRIMARY KEY(id)
 );
 
@@ -78,7 +78,7 @@ CREATE TABLE Podcast(
 
 CREATE TABLE PodcastGenre (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    genre TEXT NOT NULL UNIQUE CHECK (genre IN ("History","Crime","News and Politics","Comedy","Sport and Leisure","Society and Culture","Educational","Lifestyle","Business and Tech","Arts","Music","Games","Family Friendly"))
+    genre TEXT NOT NULL UNIQUE CHECK (genre IN ('History','Crime','News and Politics','Comedy','Sport and Leisure','Society and Culture','Educational','Lifestyle','Business and Tech','Arts','Music','Games','Family Friendly'))
 );
 
 --------------------------------------
@@ -137,7 +137,7 @@ CREATE TABLE Song (
     songName TEXT NOT NULL,
     duration TIME NOT NULL CHECK (duration > 0),
     isExplicit BOOLEAN DEFAULT FALSE,
-    genre TEXT NOT NULL CHECK (genre IN ("Rock", "Pop", "HipHop", "Rap", "Metal", "Jazz", "Lo-fi", "Blues", "Reggae", "Indie", "Clássica")),
+    genre TEXT NOT NULL CHECK (genre IN ('Rock', 'Pop', 'HipHop', 'Rap', 'Metal', 'Jazz', 'Lo-fi', 'Blues', 'Reggae', 'Indie', 'Clássica')),
     numberOfStreams INTEGER NOT NULL CHECK (numberOfStreams >= 0),
     albumId INTEGER REFERENCES Album(id),
     positionInAlbum INTEGER NOT NULL CHECK (positionInAlbum >= 1)
