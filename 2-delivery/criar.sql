@@ -125,7 +125,7 @@ CREATE TABLE Album (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     albumName TEXT NOT NULL,
     numberOfSongs INTEGER CHECK (numberOfSongs >= 1) DEFAULT 1,
-    duration TIME CHECK (duration > 0) DEFAULT 1,
+    duration TIME CHECK (duration > 0),
     releaseYear DATE NOT NULL,
     mainArtist INTEGER REFERENCES Artist(id)
 );
