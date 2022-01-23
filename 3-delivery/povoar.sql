@@ -1,90 +1,90 @@
 PRAGMA foreign_keys = ON;
 
-INSERT INTO User VALUES (1, 'Gonçalo Marques', 'goncalo@gmail.com', 0, '01-09-2002');
+INSERT INTO User VALUES (1, 'Gonçalo Marques', 'goncalo@gmail.com', 0, date('2002-09-01'));
 INSERT INTO Consumer VALUES (1, 'Free');
 
-INSERT INTO User VALUES (2, 'Nuno Pereira', 'nuno@gmail.com', 0, '20-02-2002');
+INSERT INTO User VALUES (2, 'Nuno Pereira', 'nuno@gmail.com', 0, date('2002-02-20'));
 INSERT INTO Consumer VALUES (2, 'Student');
 
-INSERT INTO User VALUES (3, 'Zé Gaspar', 'ze@gmail.com', 0, '13-08-2002');
+INSERT INTO User VALUES (3, 'Zé Gaspar', 'ze@gmail.com', 0, date('2002-08-13'));
 INSERT INTO Consumer VALUES (3, 'Premium');
 
-INSERT INTO User VALUES (4, 'Zé Castro', 'castro@gmail.com', 0, '21-05-2002');
+INSERT INTO User VALUES (4, 'Zé Castro', 'castro@gmail.com', 0, date('2002-05-21'));
 INSERT INTO Consumer VALUES (4, 'Family');
 
-INSERT INTO User VALUES (5, 'Maria', 'maria@gmail.com', 0, '23-01-2003');
+INSERT INTO User VALUES (5, 'Maria', 'maria@gmail.com', 0, date('2003-01-23'));
 INSERT INTO Consumer VALUES (5, 'Duo');
 
-INSERT INTO User VALUES (6, 'Pedro Sousa', 'pesousa@fe.up.pt', 0, '16-01-1985');
+INSERT INTO User VALUES (6, 'Pedro Sousa', 'pesousa@fe.up.pt', 0, date('1985-01-16'));
 INSERT INTO Consumer VALUES (6, 'Duo');
 
-INSERT INTO User VALUES (7, 'Fearless Records', 'admin@fr.com', 1, '09-12-1970');
+INSERT INTO User VALUES (7, 'Fearless Records', 'admin@fr.com', 1, date('1970-12-09'));
 INSERT INTO Consumer VALUES (7, 'Premium');
 
-INSERT INTO User VALUES (8, 'Ana', 'ana@hotmail.com', 0, '23-08-2005');
+INSERT INTO User VALUES (8, 'Ana', 'ana@hotmail.com', 0, date('2005-08-23'));
 INSERT INTO Consumer VALUES (8, 'Free');
 
-INSERT INTO User VALUES (9, 'Mariana', 'mari@gmail.com', 0, '08-08-2002');
+INSERT INTO User VALUES (9, 'Mariana', 'mari@gmail.com', 0, date('2002-08-08'));
 INSERT INTO Consumer VALUES (9, 'Student');
 
-INSERT INTO User VALUES (10, 'Guilherme', 'gui@edu.fe.up.pt', 0, '16-12-2002');
+INSERT INTO User VALUES (10, 'Guilherme', 'gui@edu.fe.up.pt', 0, date('2002-12-16'));
 INSERT INTO Consumer VALUES (10, 'Family');
 
 --------------------------------
 
-INSERT INTO User VALUES (11, 'Sabaton', 'sabaton@gmail.com', 1, '05-10-1999');
+INSERT INTO User VALUES (11, 'Sabaton', 'sabaton@gmail.com', 1, date('1999-10-05'));
 INSERT INTO Artist VALUES (11, 'Swedish Power Metal', 2626219);
 
-INSERT INTO User VALUES (12, 'Muse', 'muse@muse.muse', 1, '01-01-1994');
+INSERT INTO User VALUES (12, 'Muse', 'muse@muse.muse', 1, date('1994-01-01'));
 INSERT INTO Artist VALUES (12, 'British Rock', 10703319);
 
-INSERT INTO User VALUES (13, 'Queen', 'frederico.mercurio@gmail.com', 1, '20-02-1970');
+INSERT INTO User VALUES (13, 'Queen', 'frederico.mercurio@gmail.com', 1, date('1970-02-20'));
 INSERT INTO Artist VALUES (13, 'British', 39181301);
 
-INSERT INTO User VALUES (14, 'Call Me Alice', 'cma@edu.fe.up.pt', 0, '25-04-2015');
+INSERT INTO User VALUES (14, 'Call Me Alice', 'cma@edu.fe.up.pt', 0, date('2015-04-25'));
 INSERT INTO Artist VALUES (14, NULL, 202);
 
-INSERT INTO User VALUES (15, 'Quim Barreiros', 'quim@gmail.com', 1, '19-06-1947');
+INSERT INTO User VALUES (15, 'Quim Barreiros', 'quim@gmail.com', 1, date('1947-06-19'));
 INSERT INTO Artist VALUES (15, 'Pimba', 76375);
 
-INSERT INTO User VALUES (16, 'Xutos e Pontapés', 'xutos@mail.pt', 1, '02-07-1980');
+INSERT INTO User VALUES (16, 'Xutos e Pontapés', 'xutos@mail.pt', 1, date('1980-07-02'));
 INSERT INTO Artist VALUES (16, 'Contentores', 155207);
 
-INSERT INTO User VALUES (17, 'Nirvana', 'kurt.cubano@gmail.com', 1, '23-03-1987');
+INSERT INTO User VALUES (17, 'Nirvana', 'kurt.cubano@gmail.com', 1, date('1987-03-23'));
 INSERT INTO Artist VALUES (17, 'Grunge American band', 20608408);
 
-INSERT INTO User VALUES (18, 'Foo Fighters', 'baterista.dos.nirvana@yahoo.com', 1, '24-09-1994');
+INSERT INTO User VALUES (18, 'Foo Fighters', 'baterista.dos.nirvana@yahoo.com', 1, date('1994-09-24'));
 INSERT INTO Artist VALUES (18, 'Drums', 13073505);
 
-INSERT INTO User VALUES (19, 'Rise Against', 'ra@gmail.com', 1, '20-02-1999');
+INSERT INTO User VALUES (19, 'Rise Against', 'ra@gmail.com', 1, date('1999-02-20'));
 INSERT INTO Artist VALUES (19, 'Who ?', 5791016);
 
-INSERT INTO User VALUES (20, 'Olivia Rodrigo', 'xoxo@facebook.pt', 1, '20-03-2002');
+INSERT INTO User VALUES (20, 'Olivia Rodrigo', 'xoxo@facebook.pt', 1, date('2003-02-20'));
 INSERT INTO Artist VALUES (20, '''I love her'' - random fan', 44544112);
 
-INSERT INTO User VALUES (21, 'Toy', 'voucantarvoudançar@gmail.com', 1, '10-02-1963');
+INSERT INTO User VALUES (21, 'Toy', 'voucantarvoudançar@gmail.com', 1, date('1963-02-10'));
 INSERT INTO Artist VALUES (21, 'Vou mh mh até me cansar', 65914);
 
-INSERT INTO User VALUES (22, 'Trivium', 'Trivum@hotmail.com', 1, '04-10-1999');
+INSERT INTO User VALUES (22, 'Trivium', 'Trivum@hotmail.com', 1, date('1999-10-04'));
 INSERT INTO Artist VALUES (22, NULL, 1856614);
 
 --------------------------------
 
-INSERT INTO Concert VALUES (1, '01-01-1990', '15:37:00', 'America', 19);
+INSERT INTO Concert VALUES (1, date('1990-01-01'), '15:37:00', 'America', 19);
 
-INSERT INTO Concert VALUES (2, '05-12-2021', '16:00:00', 'Gondomar', 14);
+INSERT INTO Concert VALUES (2, date('2021-12-05'), '16:00:00', 'Gondomar', 14);
 INSERT INTO GuestArtist VALUES (2, 16);
 
-INSERT INTO Concert VALUES (3, '25-04-1974', '23:59:00', 'Garage', 17);
+INSERT INTO Concert VALUES (3, date('1974-04-25'), '23:59:00', 'Garage', 17);
 INSERT INTO GuestArtist VALUES (3, 18);
 INSERT INTO GuestArtist VALUES (3, 13);
 
-INSERT INTO Concert VALUES (4, '20-02-2022', '15:00:00', 'Minha Casa', 20);
+INSERT INTO Concert VALUES (4, date('2022-02-20'), '15:00:00', 'Minha Casa', 20);
 INSERT INTO GuestArtist VALUES (4, 11);
 
-INSERT INTO Concert VALUES (5, '25-12-2012', '22:00:00', 'Wembley', 12);
+INSERT INTO Concert VALUES (5, date('2012-12-25'), '22:00:00', 'Wembley', 12);
 
-INSERT INTO Concert VALUES (6, '04-07-2019', '19:00:00', 'Estádio do Restelo', 22);
+INSERT INTO Concert VALUES (6, date('2019-07-04'), '19:00:00', 'Estádio do Restelo', 22);
 INSERT INTO GuestArtist VALUES (6, 21);
 
 --------------------------------
@@ -445,12 +445,12 @@ INSERT INTO LikedPlaylist VALUES (3, 12);
 --------------------------------
 
 INSERT INTO Collaborator VALUES (1, 2);
-INSERT INTO Collaborator VALUES (2, 1);
 INSERT INTO Collaborator VALUES (1, 3);
-INSERT INTO Collaborator VALUES (3, 6);
-INSERT INTO Collaborator VALUES (2, 7);
-INSERT INTO Collaborator VALUES (2, 5);
+INSERT INTO Collaborator VALUES (2, 1);
 INSERT INTO Collaborator VALUES (2, 2);
+INSERT INTO Collaborator VALUES (2, 5);
+INSERT INTO Collaborator VALUES (2, 7);
+INSERT INTO Collaborator VALUES (3, 6);
 
 --------------------------------
 
