@@ -10,5 +10,5 @@ SELECT genre, count(*) as numberOfListeners
 FROM Song
 GROUP BY genre
 ORDER BY numberOfListeners DESC
-LIMIT 1
+LIMIT 1;
 

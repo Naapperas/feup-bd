@@ -75,7 +75,8 @@ CREATE TABLE GuestArtist (
 CREATE TABLE Podcast(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     podcastName TEXT NOT NULL,
-    podcastDescription TEXT
+    podcastDescription TEXT,
+    numberOfEpisodes INTEGER NOT NULL CHECK (numberOfEpisodes >= 0)
 );
 
 --------------------------------------

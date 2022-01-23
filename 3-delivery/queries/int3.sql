@@ -11,7 +11,7 @@ FROM User
 JOIN (SELECT id, monthlyListeners FROM Artist ORDER BY monthlyListeners DESC LIMIT 5) A ON User.id = A.id
 JOIN Album ON Album.mainArtist = A.id
 JOIN Song ON Album.id = Song.albumId
-GROUP BY A.id, Album.id
+GROUP BY A.id--, Album.id --uncomment to get top song from each album from each of the top-5 artists
 HAVING Song.numberOfStreams = max(Song.numberOfStreams)
 ORDER BY A.monthlyListeners DESC, Song.numberOfStreams DESC;
 

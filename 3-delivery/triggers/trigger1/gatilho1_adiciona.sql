@@ -14,6 +14,14 @@ BEGIN
     WHERE Playlist.id = new.playlistId;
 END;
 
+CREATE TRIGGER IF NOT EXISTS increase_podcast_number_of_episodes
+AFTER INSERT ON PodcastEpisode
+BEGIN
+    UPDATE Podcast 
+    SET numberOfEpisodes = numberOfEpisodes + 1
+    WHERE Podcast.id = new.podcastId;
+END;
+
 CREATE TRIGGER IF NOT EXISTS decrease_playlist_duration
 AFTER DELETE ON SongPositionInPlaylist
 BEGIN

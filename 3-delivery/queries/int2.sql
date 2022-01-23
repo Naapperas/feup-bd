@@ -7,10 +7,9 @@ PRAGMA foreign_keys = ON;
 .nullvalue NULL
 
 SELECT 
-    ROW_NUMBER () OVER ( 
+    ROW_NUMBER() OVER ( 
         ORDER BY monthlyListeners DESC
     ) ranking,
     userName AS name
-FROM 
-User JOIN Artist
-ON User.id = Artist.id;
+FROM User 
+JOIN Artist ON User.id = Artist.id;

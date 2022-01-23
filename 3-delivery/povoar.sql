@@ -89,8 +89,8 @@ INSERT INTO GuestArtist VALUES (6, 21);
 
 --------------------------------
 
-INSERT INTO Podcast VALUES (1, 'The Jordan B. Peterson Podcast', 'something something Dr. Jordan Peterson libtards something something');
-INSERT INTO Podcast VALUES (2, 'Big Chungus', NULL);
+INSERT INTO Podcast VALUES (1, 'The Jordan B. Peterson Podcast', 'something something Dr. Jordan Peterson libtards something something', 0);
+INSERT INTO Podcast VALUES (2, 'Big Chungus', NULL, 0);
 
 --------------------------------
 
@@ -130,12 +130,12 @@ INSERT INTO TypesOfPodcast VALUES (2, 13);
 
 --------------------------------
 
-INSERT INTO PodcastEpisode VALUES (1, 1, 'Reality and the Sacred', '00:58:18', 'Dr. Peterson describes', '01-12-2016');
-INSERT INTO PodcastEpisode VALUES (1, 2, 'Tragedy vs. Evil', '00:43:40', 'Dr. Peterson talks', '16-12-2016');
-INSERT INTO PodcastEpisode VALUES (1, 3, 'The Necessity Of Virtue', '00:52:02', 'Dr. Peterson speaks', '31-12-2016');
-INSERT INTO PodcastEpisode VALUES (1, 5, 'The Psychology of Redemption', '00:47:29', 'Dr. Peterson tells', '01-01-2017');
+INSERT INTO PodcastEpisode VALUES (1, 1, 'Reality and the Sacred', '00:58:18', 'Dr. Peterson describes', date('2016-12-01'));
+INSERT INTO PodcastEpisode VALUES (1, 2, 'Tragedy vs. Evil', '00:43:40', 'Dr. Peterson talks', date('2016-12-16'));
+INSERT INTO PodcastEpisode VALUES (1, 3, 'The Necessity Of Virtue', '00:52:02', 'Dr. Peterson speaks', date('2016-12-31'));
+INSERT INTO PodcastEpisode VALUES (1, 5, 'The Psychology of Redemption', '00:47:29', 'Dr. Peterson tells', date('2017-01-01'));
 
-INSERT INTO PodcastEpisode VALUES (2, 1, 'Big Chungi', '05:00:00', 'Our lord and savior Big Chungus releases his wisdom upon us mere mortals', '25-12-2021');
+INSERT INTO PodcastEpisode VALUES (2, 1, 'Big Chungi', '05:00:00', 'Our lord and savior Big Chungus releases his wisdom upon us mere mortals', date('2021-12-25'));
 
 --------------------------------
 
