@@ -1,12 +1,13 @@
 -- average age of a playlists' collaborators and creator users
 
--- for playlist 1
+PRAGMA foreign_keys = ON;
 
-SELECT avg(age) as averageAge
-FROM (
-    SELECT User.userName, cast(floor((julianday(date("now")) - julianday(dateOfBirth))/365) AS INTEGER) AS age
-    FROM Playlist
-    JOIN Collaborator ON Collaborator.playlistId = Playlist.id
-    JOIN User ON User.id = Collaborator.userId
-    WHERE Playlist.id = 1
-);
+.mode columns
+.headers on
+.nullvalue NULL
+
+SELECT P.playlistName, avg(cast(floor((julianday(date("now")) - julianday(dateOfBirth))/365) AS INTEGER)) AS averageCollaboratorAge
+FROM Playlist P
+JOIN Collaborator ON Collaborator.playlistId = P.id
+JOIN User ON User.id = Collaborator.userId
+GROUP BY playlistName;
