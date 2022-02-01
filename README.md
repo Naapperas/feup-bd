@@ -13,9 +13,9 @@ This repository holds the files submitted for the 3 stages of the BD project.
 
 ## Project grade:
 
-- First delivery: 16.9/20
-- Second delivery: 18.1/20
-- Third delivery: 19.2/20
+- First delivery`(25%)`: 16.9/20
+- Second delivery`(25%)`: 18.1/20
+- Third delivery`(50%)`: 19.2/20
 
 > Final grade: 18.3/20
 
